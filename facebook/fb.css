@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    min-height: 100%;
+
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 20vh;
+    background-color: #F0F2F5;
+}
+
+.left {
+    min-height: 20vh;
+    width: 45%;
+    padding-left: 120px;
+}
+
+.left img {
+    position: relative;
+    left: -30px;
+    height: 110px;
+}
+
+.left p {
+    font-size: 1.6rem;
+    margin-top: -10px;
+}
+
+.form {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: 3px solid transparent;
+    height: 340px;
+    width: 396px;
+    padding: 15px;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+input,
+button {
+    display: block;
+    height: 50px;
+    width: 363px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 2px solid rgb(196, 193, 193);
+}
+
+input:active {
+    border: 1px solid blue;
+}
+
+#btn1 {
+    background-color: #1877f2;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.pass {
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.line {
+    display: block;
+    border: 1px solid rgb(184, 181, 181);
+    margin: 25px 0;
+}
+
+#btn2 {
+    background-color: #58bd44;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    background-color: #38be1e;
+}
+
+span {
+    font-size: 0.85rem;
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+span a {
+    color: black;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+span a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 70%;
+    height: 180px;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    word-spacing: 10px;
+    opacity: 0.7;
+    line-height: 1.5;
+}
+
+hr {
+    margin: 10px 0;
+    width: 93%;
+}
+
+@media (max-width: 800px) {
+    .main {
+        width: initial;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .left {
+        /* padding-left: 80px; */
+        width: 87%;
+        margin-bottom: 20px;
+    }
+
+
+}
