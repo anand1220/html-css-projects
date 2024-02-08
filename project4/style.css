@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* padding: 80px 15px 0px 70px ; */
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    /* display: flex; */
+    width: 50%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left h1{
+    font-size: 7vw;
+    line-height: 6vw;
+    font-weight: 500;
+}
+
+.left-bottom{
+    margin-top: 180px;
+}
+
+.left-bottom span{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.text h2{
+    margin-bottom: 10px;
+}
+
+.text p{
+    width: 50%;
+    line-height: 1.3vw;
+}
+
+.right{
+    width: 30%;
+    background-color: antiquewhite;
+    /* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price span:first-child{
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.price span:last-child{
+    font-weight: 600;
+    font-size: 1vw;
+}
+.image{
+}
+
+.image p{
+    transform: rotate(-90deg);
+}
