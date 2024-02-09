@@ -1,87 +1,294 @@
-*{
+* {
     margin: 0;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-.main{
+.main {
     height: 100%;
     width: 100%;
-    /* padding: 80px 15px 0px 70px ; */
-    font-family: monospace;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+    padding: 0px 90px;
+    padding-top: 110px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 70px;
 }
 
-.left{
-    /* display: flex; */
-    width: 50%;
-    height: 80vh;
+.left {
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
-.left h1{
-    font-size: 7vw;
-    line-height: 6vw;
+
+
+.left h1 {
+    font-size: 6.5vw;
+    font-weight: 400;
+    line-height: 6.4vw;
+}
+
+.bottom-left {
+    /* height: 40%; */
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.color {
+    /* background-color: aqua; */
+    width: fit-content;
+    padding: 4px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.color h5 {
+    font-size: 1.1vw;
+    margin-right: 10px;
     font-weight: 500;
 }
 
-.left-bottom{
-    margin-top: 180px;
+.color1 {
+    height: 1.1vw;
+    width: 1.1vw;
+    background-color: blueviolet;
+    border-radius: 50%;
+    margin: 3px;
 }
 
-.left-bottom span{
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 4px;
+.color2 {
+    height: 1.1vw;
+    width: 1.1vw;
+    background-color: lawngreen;
+    border-radius: 50%;
 }
 
-.text{
+.left h2 {
     margin-top: 30px;
-}
-
-.text h2{
+    font-size: 1.8vw;
     margin-bottom: 10px;
 }
 
-.text p{
-    width: 50%;
-    line-height: 1.3vw;
+.left p {
+    font-size: 1vw;
+    width: 65%;
+    font-weight: 600;
+    color: #444;
 }
 
-.right{
-    width: 30%;
-    background-color: antiquewhite;
-    /* padding: 50px; */
+.right {
+    height: 90%;
+    width: 33%;
+    /* background-color: rgb(0, 255, 119); */
+    position: relative;
+}
+
+.right-top {
+    height: 50px;
+    width: 100%;
+    /* background-color: antiquewhite; */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.right .price{
-    display: flex;
     justify-content: space-between;
 }
 
-.price span:first-child{
-    font-weight: 600;
-    font-size: 1.2vw;
+.right-top h4 {
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.price span:last-child{
-    font-weight: 600;
-    font-size: 1vw;
-}
-.image{
+.right img {
+    width: 100%;
+    height: 88.9%;
+    object-fit: cover;
 }
 
-.image p{
-    transform: rotate(-90deg);
+.black-bag {
+    height: 130px;
+    width: 130px;
+    background-color: rgb(33, 32, 32);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: -17%;
+}
+
+.black-bag h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#rotated {
+    position: absolute;
+    left: -13%;
+    bottom: 5%;
+    rotate: -90deg;
+    /* background-color: red; */
+    transform-origin: 0 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+@media (max-width:600px) {
+    .main {
+        /* height: 100%; */
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px;
+        padding-top: 40px;
+        gap: 25px;
+    }
+
+    .left {
+        height: fit-content;
+        width: 100%;
+        /* background-color: red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+        padding-bottom: 40px;
+        gap: 45px;
+    }
+
+
+
+    .left h1 {
+        font-size: 18.5vw;
+        font-weight: 400;
+        line-height: 16vw;
+    }
+
+    .bottom-left {
+        /* height: 40%; */
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+    .color {
+        /* background-color: aqua; */
+        width: fit-content;
+        padding: 3px 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+    }
+
+    .color h5 {
+        font-size: 3.1vw;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    .color1 {
+        height: 3.1vw;
+        width: 3.1vw;
+        background-color: blueviolet;
+        border-radius: 50%;
+        margin: 3px;
+    }
+
+    .color2 {
+        height: 3.1vw;
+        width: 3.1vw;
+        background-color: lawngreen;
+        border-radius: 50%;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 4.8vw;
+        margin-bottom: 8px;
+    }
+
+    .left p {
+        font-size: 3vw;
+        width: 90%;
+        font-weight: 600;
+        color: #444;
+    }
+
+    .right {
+        height: 50%;
+        width: 100%;
+        /* background-color: rgb(0, 255, 119); */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-top {
+        height: 50px;
+        width: 100%;
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .right-top h4 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .right img {
+        width: 100%;
+        height: 88.9%;
+        object-fit: cover;
+    }
+
+    .black-bag {
+        height: 90px;
+        width: 90px;
+        background-color: rgb(33, 32, 32);
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translate(50%,-50%);
+    }
+
+    .black-bag h5 {
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    #rotated {
+        position: absolute;
+        left: 0%;
+        top: -13%;
+        rotate: 0deg;
+        /* background-color: red; */
+        transform-origin: 0 0;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
 }
